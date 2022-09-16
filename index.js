@@ -67,7 +67,7 @@ app.get('/', (req, res) => res.send('Hello World Tenant!'));
 
 
 mongoose
-  .connect(process.env.MONGODB_URL)
+  .connect(process.env.MONGODB_UR)
   .then(() => {
     app.listen(port, () => console.log(`Server running on port ${port}`));
   })
