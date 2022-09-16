@@ -64,7 +64,6 @@ app.use('/status', singleSummaryRouter)
 
 app.get('/', (req, res) => res.send('Hello World Tenant!'));
 
-app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
 
 
 mongoose
