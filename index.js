@@ -62,7 +62,7 @@ app.use('/summary', summaryRouter)
 app.use('/stk', mpesaRouter)
 app.use('/status', singleSummaryRouter)
 
-app.get('/', (req, res) => res.send('Hello World Tenant!'));
+app.get('/', (req, res) => res.send('Hello World all Tenant!'));
 
 
 
