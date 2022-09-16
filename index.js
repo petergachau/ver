@@ -62,13 +62,8 @@ app.use('/summary', summaryRouter)
 app.use('/stk', mpesaRouter)
 app.use('/status', singleSummaryRouter)
 
-app.get('/', (req, res) => res.send('Hello World all Tenant!'));
+app.get('/', (req, res) => res.send('Hello World Tenant!'));
+
+app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:${port}`));
 
 
-
-mongoose
-  .connect(process.env.MONGODB_URL)
-  .then(() => {
-    app.listen(port, () => console.log(`Server running on port ${port}`));
-  })
-  .catch((error) => console.log(`${error} did not connect`));
